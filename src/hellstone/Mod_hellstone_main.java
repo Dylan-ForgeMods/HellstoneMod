@@ -1,5 +1,21 @@
 package hellstone;
 
+
+/*
+ ____  _  _  __      __    _  _  ____  ____  _  _ 
+(  _ \( \/ )(  )    /__\  ( \( )(  _ \(  _ \( \/ )
+ )(_) )\  /  )(__  /(__)\  )  (  )___/ )(_) ))  ( 
+(____/ (__) (____)(__)(__)(_)\_)(__)  (____/(_/\_)
+~ Hellstone mod 2014
+
+Daniel, stop looking at my marvelous ASCII art and see what's wrong. I know
+your reading this.
+
+*/
+
+
+
+
 /*
  * Basic importing
  */
