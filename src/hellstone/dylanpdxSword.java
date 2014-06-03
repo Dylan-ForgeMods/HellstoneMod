@@ -16,7 +16,7 @@ import net.minecraft.util.EnumChatFormatting;
 public class dylanpdxSword extends ItemSword {
 	
 
-public dylanpdxSword(int ItemID, ToolMaterial material){
+public dylanpdxSword(ToolMaterial material){
 super(material);
 
 

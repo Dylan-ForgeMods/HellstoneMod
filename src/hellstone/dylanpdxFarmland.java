@@ -37,7 +37,7 @@ public class dylanpdxFarmland extends BlockFarmland {
     private IIcon field_149823_b;
     private static final String __OBFID = "CL_00000241";
 
-	protected dylanpdxFarmland(int par1) {
+	protected dylanpdxFarmland() {
 		super();
 		this.setTickRandomly(true);
 		this.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 0.9375F, 1.0F);

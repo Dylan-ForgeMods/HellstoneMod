@@ -17,7 +17,7 @@ import net.minecraft.util.EnumChatFormatting;
 // Types: ItemPickaxe, ItemAxe, ItemHoe, ItemSword
 public class dylanpdxShovel extends ItemSpade { // spade... wtf its shovel noob
 
-	public dylanpdxShovel(int ItemID, ToolMaterial material) {
+	public dylanpdxShovel(ToolMaterial material) {
 		super(material);
 
 	}

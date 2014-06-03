@@ -50,7 +50,7 @@ public class debug_ticker extends Item{
 	return true;
 	}
 
-	public debug_ticker(int ItemID) {
+	public debug_ticker() {
 		super();
 
 	}

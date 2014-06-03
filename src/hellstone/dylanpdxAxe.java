@@ -18,7 +18,7 @@ import net.minecraft.util.EnumChatFormatting;
 public class dylanpdxAxe extends ItemAxe {
 	
 
-public dylanpdxAxe(int ItemID, ToolMaterial material){
+public dylanpdxAxe(ToolMaterial material){
 super(material);
 
 

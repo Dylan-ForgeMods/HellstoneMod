@@ -16,7 +16,7 @@ import net.minecraft.util.EnumChatFormatting;
 // Types: ItemPickaxe, ItemAxe, ItemHoe, ItemSword
 public class dylanpdxPickaxe extends ItemPickaxe {
 
-	public dylanpdxPickaxe(int ItemID, ToolMaterial material) {
+	public dylanpdxPickaxe(ToolMaterial material) {
 		super(material);
 
 	}

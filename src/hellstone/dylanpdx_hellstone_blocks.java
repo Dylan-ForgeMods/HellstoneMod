@@ -12,9 +12,9 @@ import net.minecraft.creativetab.CreativeTabs;
 
 public class dylanpdx_hellstone_blocks extends Block {
 
-public dylanpdx_hellstone_blocks(int par1, String texture) {
+public dylanpdx_hellstone_blocks(String texture) {
 super(Material.rock);
-setCreativeTab(CreativeTabs.tabBrewing); //place in creative tabs
+setCreativeTab(Mod_hellstone_main.HellstoneTab); //place in creative tabs
 
 }
 

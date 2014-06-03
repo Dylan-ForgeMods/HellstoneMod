@@ -20,7 +20,7 @@ public class dylanpdxHoe extends Item
 {
     protected ToolMaterial theToolMaterial;
 
-    public dylanpdxHoe(int par1, ToolMaterial par2EnumToolMaterial)
+    public dylanpdxHoe(ToolMaterial par2EnumToolMaterial)
     {
         super();
         this.theToolMaterial = par2EnumToolMaterial;

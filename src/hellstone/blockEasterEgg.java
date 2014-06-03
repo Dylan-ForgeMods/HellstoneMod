@@ -15,7 +15,7 @@ import net.minecraft.world.World;
 
 public class blockEasterEgg extends BlockDragonEgg
 {
-    public blockEasterEgg(int par1)
+    public blockEasterEgg()
     {
         super();
         this.setBlockBounds(0.0625F, 0.0F, 0.0625F, 0.9375F, 1.0F, 0.9375F);
