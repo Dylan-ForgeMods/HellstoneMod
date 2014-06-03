@@ -39,7 +39,7 @@ public class PotatoCropHellized extends BlockCrops {
 	@SideOnly(Side.CLIENT)
 	private IIcon[] iconArray;
 
-	public PotatoCropHellized(int par1) {
+	public PotatoCropHellized() {
 		super();
 	}
 
@@ -51,7 +51,7 @@ public class PotatoCropHellized extends BlockCrops {
 		return par1 == net.minecraft.block.Block.getIdFromBlock(hellstone.Mod_hellstone_main.dylanpdxFarmland);
 	}
 
-	public IIcon getIcon(int par1, int par2) {
+	/* public IIcon getIcon(int par1, int par2) {
 		if (par2 < 7) {
 			if (par2 == 6) {
 				par2 = 5;
@@ -61,7 +61,7 @@ public class PotatoCropHellized extends BlockCrops {
 		} else {
 			return this.iconArray[3];
 		}
-	}
+	}  */
 
 	/**
 	 * Generate a seed ItemStack for this crop.

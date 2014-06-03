@@ -39,10 +39,10 @@ import cpw.mods.fml.relauncher.SideOnly;
  * Basic needed forge stuff
  */
 @Mod(modid = "hellstone_mod", name = "Hellstone Mod", version = "v1")
-// @NetworkMod(clientSideRequired = true, serverSideRequired = false) NotNeeded
 public class Mod_hellstone_main
 {
-
+    public static final String MODID = "hellstone_mod";
+    public static final String VERSION = "1.0";
 	public static CreativeTabs HellstoneTab = new CreativeTabs("HellstoneTab")
 	{
 		public ItemStack getIconItemStack()
@@ -92,41 +92,26 @@ public class Mod_hellstone_main
 	{
 		// define items/blocks/generators
 		GameRegistry.registerWorldGenerator(new EventManager(), 0);
-		// GameRegistry.registerItem(HellstoneSword, "Hellsword");
-		// LanguageRegistry.instance().addStringLocalization(
-		// "itemGroup.HellstoneTab", "en_US", "Hellstone");
+		
+		
 		// Items
-		HellStone = new dylanpdx_hellstone_items().setUnlocalizedName("HellstoneSprite1");
-		HellStone.setTextureName("HellstoneSprite1");
+		HellStone = new dylanpdx_hellstone_items().setTextureName("hellstone_mod:HellstoneSprite1");
 		TickerDebug = new debug_ticker().setCreativeTab(CreativeTabs.tabBrewing).setUnlocalizedName("Ticker");
-		dylanpdxFarmland = new dylanpdxFarmland().setBlockName("HellFarm");
-		dylanpdxFarmland.setBlockTextureName("hellstn");
+		dylanpdxFarmland = new dylanpdxFarmland().setBlockName("HellFarm").setBlockTextureName("hellstone_mod:hellstn");
 		// blocks
-		HellstoneOre = new dylanpdx_hellstone_blocks("hellstoneore").setBlockName("hellstoneore");
-		HellstoneOre.setBlockTextureName("hellstoneore");
-		HellstoneOre.setCreativeTab(this.HellstoneTab);
-		EasterEgg = new blockEasterEgg();
-		EasterEgg.setBlockTextureName("EasterEgg");
-		EasterEgg.setCreativeTab(this.HellstoneTab);
+		HellstoneOre = new dylanpdx_hellstone_blocks().setBlockName("hellstoneore").setCreativeTab(this.HellstoneTab).setBlockTextureName("hellstone_mod:hellstoneore");
+		EasterEgg = new blockEasterEgg().setBlockName("easteregg_h");
 		// tools
-		HellstoneSword = new dylanpdxSword(EnumToolMaterialHellstone).setUnlocalizedName("HellSword");
-		HellstoneSword.setTextureName("Hellsword");
-		HellstoneSword.setCreativeTab(this.HellstoneTab);
-		HellstonePickaxe = new dylanpdxPickaxe(EnumToolMaterialHellstone).setUnlocalizedName("HellPick");
-		HellstonePickaxe.setTextureName("Hellpick");
-		HellstonePickaxe.setCreativeTab(this.HellstoneTab);
-		HellstoneAxe = new dylanpdxAxe(EnumToolMaterialHellstone).setUnlocalizedName("HellAxe");
-		HellstoneAxe.setCreativeTab(this.HellstoneTab);
-		HellstoneShovel = new dylanpdxShovel(EnumToolMaterialHellstone).setUnlocalizedName("HellSpade");
-		HellstoneShovel.setCreativeTab(this.HellstoneTab);
-		HellstoneHoe = new dylanpdxHoe(EnumToolMaterialHellstone).setUnlocalizedName("HellHoe");
-		HellstoneHoe.setCreativeTab(this.HellstoneTab);
+		HellstoneSword = new dylanpdxSword(EnumToolMaterialHellstone).setUnlocalizedName("HellSword").setTextureName("hellstone_mod:Hellsword").setCreativeTab(this.HellstoneTab);
+		HellstonePickaxe = new dylanpdxPickaxe(EnumToolMaterialHellstone).setUnlocalizedName("HellPick").setTextureName("hellstone_mod:Hellpick").setCreativeTab(this.HellstoneTab);
+		HellstoneAxe = new dylanpdxAxe(EnumToolMaterialHellstone).setUnlocalizedName("HellAxe").setCreativeTab(this.HellstoneTab).setTextureName("hellstone_mod:Hellaxe");
+		HellstoneShovel = new dylanpdxShovel(EnumToolMaterialHellstone).setUnlocalizedName("HellSpade").setCreativeTab(this.HellstoneTab).setTextureName("hellstone_mod:Hellshovel");
+		HellstoneHoe = new dylanpdxHoe(EnumToolMaterialHellstone).setUnlocalizedName("HellHoe").setCreativeTab(this.HellstoneTab).setTextureName("hellstone_mod:Hellhoe");
 
 		// misc
-		HellPotato = new PotatoCropHellized(1337).setBlockName("HellPotato");
+		HellPotato = new PotatoCropHellized().setBlockName("HellPotato");
 		HellPotato.setBlockTextureName("potatoes");
 
-		int FarmlandID;
 
 		// FarmlandID = dylanpdxFarmland.blockID;
 
@@ -149,10 +134,10 @@ public class Mod_hellstone_main
 		GameRegistry.registerBlock(dylanpdxFarmland, "HellFarmland");
 		GameRegistry.registerBlock(HellPotato, "HellishPotato");
 		GameRegistry.registerItem(HellstoneAxe, "Hellstone Axe");
-		GameRegistry.registerItem(this.HellstoneHoe,"Hellstone Hoe");
-		GameRegistry.registerItem(this.HellstonePickaxe,"Hellstone Pickaxe");
-		GameRegistry.registerItem(this.HellstoneShovel,"Hellstone Spade");
-		GameRegistry.registerItem(this.HellstoneSword,"Hellstone Sword");
+		GameRegistry.registerItem(HellstoneHoe,"Hellstone Hoe");
+		GameRegistry.registerItem(HellstonePickaxe,"Hellstone Pickaxe");
+		GameRegistry.registerItem(HellstoneShovel,"Hellstone Spade");
+		GameRegistry.registerItem(HellstoneSword,"Hellstone Sword");
 
 		// crafting
 
