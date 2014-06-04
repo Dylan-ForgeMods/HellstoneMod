@@ -1,5 +1,7 @@
 package hellstone;
 
+import java.util.Random;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -47,9 +49,12 @@ public class PotatoCropHellized extends BlockCrops {
 	/**
 	 * From the specified side and block metadata retrieves the blocks texture. Args: side, metadata
 	 */
-	public boolean canThisPlantGrowOnThisBlockID(int par1) {
-		return par1 == net.minecraft.block.Block.getIdFromBlock(hellstone.Mod_hellstone_main.dylanpdxFarmland);
-	}
+	
+    protected boolean canPlaceBlockOn(Block p_149854_1_)
+    {
+        return p_149854_1_ == Mod_hellstone_main.dylanpdxFarmland;
+    }
+	
 
 	/* public IIcon getIcon(int par1, int par2) {
 		if (par2 < 7) {
@@ -111,7 +116,7 @@ public class PotatoCropHellized extends BlockCrops {
 					.getTextureName() + "_stage_" + i);
 		}
 	}
-
+	
 	public void onNeighborBlockChange(World par1World, int par2, int par3,
 			int par4, int par5) {
 

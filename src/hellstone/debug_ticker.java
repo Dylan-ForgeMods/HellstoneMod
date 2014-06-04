@@ -61,6 +61,8 @@ public class debug_ticker extends Item{
 			boolean check) {
 		list.add(EnumChatFormatting.DARK_PURPLE + "DEBUG ITEM");
 		list.add(EnumChatFormatting.RED + "USE AT OWN RISK");
+		list.add("~");
+		list.add("Block Id - Easter Egg: "+ getIdFromItem(getItemFromBlock(Mod_hellstone_main.EasterEgg)));
 	}
 
 }
