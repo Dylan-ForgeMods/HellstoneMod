@@ -78,12 +78,12 @@ public class dylanpdxFarmland extends BlockFarmland {
 	/**
 	 * From the specified side and block metadata retrieves the blocks texture. Args: side, metadata
 	 */
-    public IIcon getIcon(int p_149691_1_, int p_149691_2_)
+    
+	/* public IIcon getIcon(int p_149691_1_, int p_149691_2_)
     {
         return p_149691_1_ == 1 ? (p_149691_2_ > 0 ? this.field_149824_a : this.field_149823_b) : Blocks.dirt.getBlockTextureFromSide(p_149691_1_);
-    }
-	/**
-     */
+    } */
+	
 	/*public void updateTick(World par1World, int par2, int par3, int par4,
 			Random par5Random) {
 		if (!this.isWaterNearby(par1World, par2, par3, par4)

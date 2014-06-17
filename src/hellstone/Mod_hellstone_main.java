@@ -64,6 +64,11 @@ public class Mod_hellstone_main
 	public static Item HellstoneSword;
 	public static Item HellstonePickaxe;
 	public static Item HellstoneHoe;
+	
+	public static Item HellstoneHat;
+	public static Item HellstoneChestplate;
+	public static Item HellstoneLeggings;
+	public static Item HellstoneBoots;
 	/*
 	 * ToolMaterial goes liek dis: (
 	 */
@@ -96,7 +101,7 @@ public class Mod_hellstone_main
 		
 		// Items
 		HellStone = new dylanpdx_hellstone_items().setTextureName("hellstone_mod:HellstoneSprite1");
-		TickerDebug = new debug_ticker().setCreativeTab(CreativeTabs.tabBrewing).setUnlocalizedName("Ticker");
+		TickerDebug = new debug_ticker().setCreativeTab(this.HellstoneTab).setUnlocalizedName("Ticker");
 		dylanpdxFarmland = new dylanpdxFarmland().setBlockName("HellFarm").setBlockTextureName("hellstone_mod:hellstn");
 		// blocks
 		HellstoneOre = new dylanpdx_hellstone_blocks().setBlockName("hellstoneore").setCreativeTab(this.HellstoneTab).setBlockTextureName("hellstone_mod:hellstoneore");
@@ -111,8 +116,9 @@ public class Mod_hellstone_main
 		// misc
 		HellPotato = new PotatoCropHellized().setBlockName("HellPotato");
 		HellPotato.setBlockTextureName("potatoes");
-
-
+		//Armor
+		//HellstoneHat = new HellstoneHelmet().setUnlocalizedName("HellHat");
+		
 		// FarmlandID = dylanpdxFarmland.blockID;
 
 		// adding names
@@ -138,6 +144,7 @@ public class Mod_hellstone_main
 		GameRegistry.registerItem(HellstonePickaxe,"Hellstone Pickaxe");
 		GameRegistry.registerItem(HellstoneShovel,"Hellstone Spade");
 		GameRegistry.registerItem(HellstoneSword,"Hellstone Sword");
+		GameRegistry.registerItem(TickerDebug, "Ticker");
 
 		// crafting
 
